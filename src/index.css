@@ -1,0 +1,63 @@
+/* Tailwind CSS */
+@import "tailwindcss";
+
+@theme
+{
+  /* ====  Curious Color ===== Background Color -  */
+  --color-blue-50: #eff8ff;
+  --color-blue-100: #def0ff;
+  --color-blue-200: #b6e3ff;
+  --color-blue-300: #76ceff;
+  --color-blue-400: #2eb6ff;
+  /* Logo Color */
+  --color-blue-500: #0291e2;
+  --color-blue-600: #007cd2;
+  --color-blue-700: #0062aa;
+  --color-blue-800: #00548c;
+  --color-blue-900: #074573; 
+  --color-blue-950: #042c4d; 
+
+  /* === Lima === */
+  --color-green-50: #faffe5;
+  --color-green-100: #f1ffc7;
+  --color-green-200: #e3ff95;
+  --color-green-300: #cdfe58;
+  --color-green-400: #b6f526;
+  --color-green-500: #97dc06;
+  /* Logo Color */
+  --color-green-600: #7fc000;
+  --color-green-700: #578506;
+  --color-green-800: #47690b;
+  --color-green-900: #3b580f; 
+  --color-green-950: #1e3201; 
+
+  /* === Breakpoints (responsive sizes) === */
+  --breakpoint-xs: 400px;   /* Extra Small devices (mobile) */
+  --breakpoint-sm: 576px;   /* Small devices (mobile) */
+  --breakpoint-md: 768px;   /* Medium devices (tablet) */
+  --breakpoint-lg: 992px;  /* Large devices (laptop) */
+  --breakpoint-xl: 1200px;  /* Extra large screens */
+  --breakpoint-2xl: 1440px; /* 2X large screens */
+
+  /* ===== Fonts ==== */
+
+  --font-title: "Work Sans", sans-serif;
+}
+
+html 
+{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*, *::before, *::after
+{
+  box-sizing: inherit;
+}
+
+body
+{
+  font-family: "Pathway Extreme", sans-serif;
+}
+
+
