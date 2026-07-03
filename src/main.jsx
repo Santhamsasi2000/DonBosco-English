@@ -14,14 +14,7 @@ import NavBar from './Common/Navbar/NavBar.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
-      {/* <App /> */}
-      {/* <Contact /> */}
-      <NavBar/>
-      <HeroContact />
-      <HeroSection />
-      <AdmissionCTA />
-      <Footer />
-      {/* <OnlineAdmission /> */}
+      <App />
     </BrowserRouter>
   </StrictMode>,
 )
