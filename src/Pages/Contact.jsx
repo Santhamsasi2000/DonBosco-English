@@ -1,24 +1,32 @@
-// import ContactUsForm from "../Contact/ContactForm"
-import FindUs from "../Contact/FindUs"
-import HeroContact from "../Contact/HeroContact"
-import InformationContact from "../Contact/InformationContact"
+import HeroBanner  from "../Contact/HeroBanner";
+import Breadcrumb  from "../Contact/Breadcrumb";
+import InfoCards   from "../Contact/InfoCards";
+import MapSection  from "../Contact/MapSection";
+import ContactForm from "../Contact/ContactForm";
 
 const Contact = () => {
   return (
-    <>
-      <HeroContact/>
-      {/* main */}
-      <div className="flex flex-wrap justify-between 
-       gap-8 lg:gap-0 p-4 sm:p-5 md:p-6 lg:p-7 xl:p-8">
-        <div className="w-full lg:w-[47%] xl:w-[45%]">
-          <InformationContact />
-        </div>
-        <div className="w-full lg:w-[47%] xl:w-[45%]">
-           {/* <ContactUsForm/> */}
-        </div>
-      </div>
-    </>
-  )
-}
+    <main className="bg-blue-50 min-h-screen">
 
-export default Contact
+      {/* Hero */}
+      <HeroBanner />
+
+      {/* Breadcrumb */}
+      <Breadcrumb pages={["Home", "Contact Us"]} />
+
+      {/* Info Cards */}
+      <InfoCards />
+
+      {/* Map + Form */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 sm:pb-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14">
+          <MapSection  />
+          <ContactForm />
+        </div>
+      </section>
+
+    </main>
+  );
+};
+
+export default Contact;
