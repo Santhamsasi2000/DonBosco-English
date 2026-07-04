@@ -5,6 +5,7 @@ import MissionSection from "./WhoWeAre/MissionSection";
 import ValuesSection from "./WhoWeAre/ValuesSection";
 import StatsSection  from "./WhoWeAre/StatsSection";
 import Breadcrumb    from "../Contact/Breadcrumb";
+import GeneralInfoSection from "./WhoWeAre/GeneralInfoSection";
 
 const WhoWeAre = () => {
   return (
@@ -15,6 +16,9 @@ const WhoWeAre = () => {
 
       {/* Breadcrumb */}
       <Breadcrumb pages={["Home", "About Us", "Who We Are"]} />
+
+      {/* General Information */}
+      <GeneralInfoSection />
 
       {/* Motto */}
       <MottoSection />
